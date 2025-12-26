@@ -1,13 +1,10 @@
-x=int(input())
-for i in range(1,x+1):
-    if(i%3==0) and (i%5==0):
-         print("fizzbuzz")
-    elif i%5==0:
-              print("buzz")
-    elif i%3==0:
-                    print("fizz")
-                    
-    else:
-        print(i) 
-          
-          
+
+X IN A SQUARE HALLOW PATTERN
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        if i==0 or i==n-1 or j==0 or j==n-i-1 or j==i or j==n-1:
+           print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()        
